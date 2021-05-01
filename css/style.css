@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-image: url("../img/background.jpg");
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.ocean {
+  height: 220px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+}
+
+.water {
+  height: 100%;
+  position: absolute;
+  right: 0;
+  -webkit-animation: water 10s linear infinite;
+          animation: water 10s linear infinite;
+}
+
+@-webkit-keyframes water {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+  }
+}
+
+@keyframes water {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+  }
+}
+
+.boat {
+  width: 350px;
+  position: absolute;
+  bottom: 200px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.boat img {
+  width: 100%;
+  -webkit-box-reflect: below 0 linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.6));
+  -webkit-animation: boat 2s linear infinite;
+          animation: boat 2s linear infinite;
+}
+
+@-webkit-keyframes boat {
+  0% {
+    -webkit-transform: rotate(0deg) translateY(0);
+            transform: rotate(0deg) translateY(0);
+  }
+  25% {
+    -webkit-transform: rotate(-1deg) translateY(-3px);
+            transform: rotate(-1deg) translateY(-3px);
+  }
+  50% {
+    -webkit-transform: rotate(0deg) translateY(-5px);
+            transform: rotate(0deg) translateY(-5px);
+  }
+  75% {
+    -webkit-transform: rotate(1deg) translateY(-3px);
+            transform: rotate(1deg) translateY(-3px);
+  }
+  100% {
+    -webkit-transform: rotate(0deg) translateY(0);
+            transform: rotate(0deg) translateY(0);
+  }
+}
+
+@keyframes boat {
+  0% {
+    -webkit-transform: rotate(0deg) translateY(0);
+            transform: rotate(0deg) translateY(0);
+  }
+  25% {
+    -webkit-transform: rotate(-1deg) translateY(-3px);
+            transform: rotate(-1deg) translateY(-3px);
+  }
+  50% {
+    -webkit-transform: rotate(0deg) translateY(-5px);
+            transform: rotate(0deg) translateY(-5px);
+  }
+  75% {
+    -webkit-transform: rotate(1deg) translateY(-3px);
+            transform: rotate(1deg) translateY(-3px);
+  }
+  100% {
+    -webkit-transform: rotate(0deg) translateY(0);
+            transform: rotate(0deg) translateY(0);
+  }
+}
+
+.cloud {
+  height: 250px;
+  position: absolute;
+  right: 0;
+  -webkit-animation: cloud 10s linear infinite;
+          animation: cloud 10s linear infinite;
+}
+
+@-webkit-keyframes cloud {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(500px);
+            transform: translateX(500px);
+  }
+}
+
+@keyframes cloud {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(500px);
+            transform: translateX(500px);
+  }
+}
+/*# sourceMappingURL=style.css.map */
